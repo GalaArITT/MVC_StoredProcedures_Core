@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MVC_StoredProcedures_CORE.Models.VentasEmpleado>
+@{
+    ViewData["Title"] = "MostrarSP";
+}
+
+<h1>MostrarSP</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().nombre_completo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().ordenes_vendidas)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_completo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ordenes_vendidas)
+            </td>
+            <td>
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @Html.ActionLink("Empleado", "Index", "Categories", null, new 
+       { @class = "btn btn-outline-success m-1 btn-block" })
+    <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Home</a>
+</div>
